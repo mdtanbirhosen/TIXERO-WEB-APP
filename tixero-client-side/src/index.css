@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+
+.active {
+  border-bottom: 3px solid #F62B0A;
+  border-radius: none;
+
+
+}
