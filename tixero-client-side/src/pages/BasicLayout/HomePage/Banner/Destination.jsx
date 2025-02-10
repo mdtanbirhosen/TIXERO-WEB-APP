@@ -13,7 +13,7 @@ const Destination = () => {
     };
 
     return (
-      <div className='bg-white rounded-xl p-2'>
+      <div className='bg-white rounded-xl'>
         <Box sx={{ width: '100%', typography: 'body1' }}>
           <TabContext value={value}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -29,6 +29,7 @@ const Destination = () => {
                   sx={{
                     bgcolor: value === "1" ? '#7F1891' : 'transparent',
                     color: value === "1" ? 'white' : 'black',
+                    borderRadius:"12px 0px 0px 0px",
                     '&.Mui-selected': { bgcolor: '#7F1891', color: 'white' }
                   }}
                 />
@@ -38,6 +39,7 @@ const Destination = () => {
                   sx={{
                     bgcolor: value === "2" ? '#7F1891' : 'transparent',
                     color: value === "2" ? 'white' : 'black',
+                    borderRadius:"0px 12px 0px 0px",
                     '&.Mui-selected': { bgcolor: '#7F1891', color: 'white' }
                   }}
                 />

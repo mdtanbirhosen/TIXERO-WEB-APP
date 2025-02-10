@@ -1,5 +1,5 @@
 import {  NavLink } from "react-router-dom";
-// import logoImg from "../../assets/logoImg.jpg"
+import logoImg from "../../assets/logoImg.png"
 const Navbar = () => {
     const links = <>
         <li ><NavLink className="px-3 py-0.5" to={'/'}>Home</NavLink></li>
@@ -22,8 +22,8 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className=" text-2xl font-bold">Tixero
-                    {/* <img src="Tixero" className=" h-10" alt="" /> */}
+                <a className=" text-2xl font-bold">
+                    <img src={logoImg} className="h-8 md:h-14" alt="" />
                 </a>
             </div>
             
