@@ -1,5 +1,6 @@
 import {  NavLink } from "react-router-dom";
 import logoImg from "../../assets/logoImg.png"
+import Button from "../Button/Button";
 const Navbar = () => {
     const links = <>
         <li ><NavLink className="px-3 py-0.5" to={'/'}>Home</NavLink></li>
@@ -10,7 +11,7 @@ const Navbar = () => {
         <li ><NavLink className="px-3 py-0.5" to={'/contact-us'}>Contact Us</NavLink></li>
     </>
     return (
-        <div className="navbar p-0 max-w-7xl mx-auto">
+        <div className="navbar p-2 max-w-7xl mx-auto bg-slate-100 rounded-2xl mt-1 ">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +24,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <a className=" text-2xl font-bold">
-                    <img src={logoImg} className="h-8 md:h-14" alt="" />
+                    <img src={logoImg} className="h-8 md:h-10" alt="" />
                 </a>
             </div>
             
@@ -34,7 +35,7 @@ const Navbar = () => {
 
                 </ul>
             </div>
-                <a className="btn">Button</a>
+                <Button className={'btn'}>Login</Button>
             </div>
         </div>
     );
