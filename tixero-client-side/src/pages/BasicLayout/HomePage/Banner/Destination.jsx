@@ -13,7 +13,7 @@ const Destination = () => {
     };
 
     return (
-      <div className='bg-white rounded-xl'>
+      <div className='bg-white rounded-lg w-2/3'>
         <Box sx={{ width: '100%', typography: 'body1' }}>
           <TabContext value={value}>
             <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -27,20 +27,20 @@ const Destination = () => {
                   label="Item One" 
                   value="1" 
                   sx={{
-                    bgcolor: value === "1" ? '#7F1891' : 'transparent',
+                    bgcolor: value === "1" ? '#E30B13' : 'transparent',
                     color: value === "1" ? 'white' : 'black',
-                    borderRadius:"12px 0px 0px 0px",
-                    '&.Mui-selected': { bgcolor: '#7F1891', color: 'white' }
+                    borderRadius:"8px 0px 0px 0px",
+                    '&.Mui-selected': { bgcolor: '#E30B13', color: 'white' }
                   }}
                 />
                 <Tab 
                   label="Item Two" 
                   value="2" 
                   sx={{
-                    bgcolor: value === "2" ? '#7F1891' : 'transparent',
+                    bgcolor: value === "2" ? '#E30B13' : 'transparent',
                     color: value === "2" ? 'white' : 'black',
-                    borderRadius:"0px 12px 0px 0px",
-                    '&.Mui-selected': { bgcolor: '#7F1891', color: 'white' }
+                    borderRadius:"0px 8px 0px 0px",
+                    '&.Mui-selected': { bgcolor: '#E30B13', color: 'white' }
                   }}
                 />
               </TabList>

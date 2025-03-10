@@ -10,3 +10,8 @@
 
 
 }
+
+@theme {
+  --color-primary-color: #E30B13;
+  --color-secondary-color: #606060;
+}

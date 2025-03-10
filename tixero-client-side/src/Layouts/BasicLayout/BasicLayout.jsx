@@ -4,16 +4,18 @@ import Navbar from "../../components/Navbar/Navbar";
 
 const BasicLayout = () => {
     return (
-        <div className="bg-[#E3E3E3]">
-            <Navbar></Navbar>
+        <div className="bg-[#E3E3E3] p-2 pb-10 c">
+            <div className="container mx-auto">
+            <header>
+                <Navbar></Navbar>
+            </header>
 
-
-            <main className="px-2 max-w-7xl mx-auto min-h-screen">
+            <main className=" mx-auto min-h-[calc(100vh-312px)] py-10">
                 <Outlet></Outlet>
             </main>
 
-
             <Footer></Footer>
+            </div>
         </div>
     );
 };
