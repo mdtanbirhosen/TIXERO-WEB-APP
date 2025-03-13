@@ -2,7 +2,7 @@ import logo from "../../assets/logoImg.png"
 import { FaFacebookF, FaXTwitter, FaYoutube } from "react-icons/fa6";
 const Footer = () => {
     return (
-        <footer className=" bg-white rounded-lg p-5 ">
+        <footer className=" bg-white rounded-lg p-3 md:p-5 ">
             <div className="flex lg:items-center justify-between flex-col lg:flex-row gap-5">
                 {/* company description section */}
                 <div className="w-full md:w-1/2 lg:w-1/3">

@@ -1,26 +1,13 @@
-import { HiOutlineMail } from "react-icons/hi";
-import { MdPhoneAndroid } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
+import { IoMdCall } from "react-icons/io";
 const Info = () => {
   return (
-    <div className="flex flex-wrap justify-between  pb-2  max-w-7xl mx-auto text-xs md:text-sm">
-      <div className="flex flex-wrap gap-2">
-        {/* Phone number */}
-        <div className="flex items-center gap-1">
-          <MdPhoneAndroid></MdPhoneAndroid>
-          <p>+8801234567890</p>
-        </div>
-        {/* Email */}
-        <div className="flex items-center gap-1">
-          <HiOutlineMail></HiOutlineMail>
-          <p>tixero@info.com</p>
-        </div>
+    <div className="flex px-3 bg-primary-color text-white font-bold rounded-md text-xs">
+      <div className="border-r flex items-center justify-center pr-3">
+        <IoMdCall className="text-2xl "></IoMdCall>
       </div>
-      <div className="flex flex-wrap items-center ">
-        <div className="flex   items-center gap-0.5">
-          <FaUser></FaUser> Agent Login
-        </div>
-        /<div>Registration</div>
+      <div className="pl-3 py-1">
+        <div className="border-b border-white">Call 121212</div>
+        <div>010000000000</div>
       </div>
     </div>
   );

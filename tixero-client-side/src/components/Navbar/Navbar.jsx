@@ -1,6 +1,7 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logoImg from "../../assets/logoImg.png"
 import Button from "../Button/Button";
+import Info from "../../pages/BasicLayout/HomePage/Banner/Info"
 const Navbar = () => {
     const links = <>
         <li ><NavLink className="px-3 py-0.5" to={'/'}>Home</NavLink></li>
@@ -9,9 +10,10 @@ const Navbar = () => {
         <li ><NavLink className="px-3 py-0.5" to={'/feedback'}>Feedback</NavLink></li>
         <li ><NavLink className="px-3 py-0.5" to={'manage-booking'}>Manage Booking</NavLink></li>
         <li ><NavLink className="px-3 py-0.5" to={'/contact-us'}>Contact Us</NavLink></li>
+        <li><Info></Info></li>
     </>
     return (
-        <div className="navbar p-2  mx-auto bg-slate-100 rounded-lg mt-1 ">
+        <div className="navbar p-2  mx-auto bg-[#ffffffaf] backdrop-blur-2xl rounded-lg mt-1 sticky top-3 z-50">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,15 +29,16 @@ const Navbar = () => {
                     <img src={logoImg} className="h-8 md:h-10" alt="" />
                 </a>
             </div>
-            
-            <div className="navbar-end ">
-            <div className="navbar-center hidden lg:flex">
-                <ul className="  menu-horizontal px-1">
-                    {links}
 
-                </ul>
-            </div>
-                <Button className={'btn'}>Login</Button>
+            <div className="navbar-end ">
+                <div className="navbar-center hidden lg:flex">
+                    <ul className="  menu-horizontal px-1 items-center">
+                        {links}
+
+
+                    </ul>
+                </div>
+                <Button className={''}>Login</Button>
             </div>
         </div>
     );
